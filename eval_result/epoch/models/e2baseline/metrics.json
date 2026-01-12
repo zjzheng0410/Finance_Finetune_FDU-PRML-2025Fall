@@ -1,0 +1,68 @@
+{
+  "model": "LoRA::Qwen/Qwen2.5-7B-Instruct::/workspace/LLaMA-Factory/saves/e2baseline",
+  "gen_cfg": {
+    "max_new_tokens": 256,
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "repetition_penalty": 1.0
+  },
+  "max_input_tokens": 2048,
+  "batch_size": 24,
+  "finance": {
+    "n": 976,
+    "exact_match": 0.0010245901639344263,
+    "rouge": {
+      "rouge1": 0.2500586048767709,
+      "rouge2": 0.06253988580592826,
+      "rougeL": 0.1656871051998455
+    },
+    "bleu": {
+      "bleu": 3.160831180849698
+    },
+    "chrf": {
+      "chrf": 23.094218904612422
+    },
+    "length_pred_words": {
+      "mean": 175.63934426229508,
+      "p50": 206.5,
+      "p90": 236.0
+    },
+    "length_ref_words": {
+      "mean": 168.60245901639345,
+      "p50": 123.0,
+      "p90": 345.5
+    },
+    "latency_sec_total": 406.85674238204956,
+    "latency_sec_per_sample": 0.41686141637505075,
+    "pred_file": "eval_runs/20260112_094214_three/models/e2baseline/pred_finance.jsonl"
+  },
+  "general": {
+    "n": 2470,
+    "exact_match": 0.0016194331983805667,
+    "rouge": {
+      "rouge1": 0.3784831889696417,
+      "rouge2": 0.19387909855755686,
+      "rougeL": 0.29954977256235676
+    },
+    "bleu": {
+      "bleu": 11.568940147459687
+    },
+    "chrf": {
+      "chrf": 40.44985670846395
+    },
+    "length_pred_words": {
+      "mean": 66.65182186234817,
+      "p50": 50.0,
+      "p90": 135.0
+    },
+    "length_ref_words": {
+      "mean": 41.298785425101215,
+      "p50": 26.0,
+      "p90": 96.0
+    },
+    "latency_sec_total": 932.2491276264191,
+    "latency_sec_per_sample": 0.37742879660988626,
+    "pred_file": "eval_runs/20260112_094214_three/models/e2baseline/pred_general.jsonl"
+  }
+}
