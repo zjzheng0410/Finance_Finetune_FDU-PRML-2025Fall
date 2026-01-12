@@ -1,0 +1,10 @@
+﻿experiment,setting,finance_rougeL_pct,finance_bleu_pct,finance_chrf_pct,finance_em_pct,finance_latency_s,general_rougeL_pct,general_bleu_pct,general_chrf_pct,general_em_pct,general_latency_s,finance_rougeL_raw,finance_bleu_raw,finance_chrf_raw,finance_em_raw,general_rougeL_raw,general_bleu_raw,general_chrf_raw,general_em_raw
+Baseline,epoch=2; data=unclean; LoRA=all; cutoff=2048; lr=2e-4,16.57,3.16,23.09,0.1,0.417,29.95,11.57,40.45,0.16,0.377,0.16570000000000001,0.0316,0.2309,0.001,0.2995,0.1157,0.4045,0.0016
+Clean Data,data=cleaned (others same as baseline),16.38,3.15,22.81,0.1,0.415,29.29,11.01,40.7,0.24,0.393,0.1638,0.0315,0.2281,0.001,0.2929,0.1101,0.40700000000000003,0.0024
+Cutoff=1024,cutoff=1024 (others same as baseline),16.74,3.29,23.19,0.1,0.422,30.62,12.19,39.88,0.28,0.379,0.1674,0.0329,0.23190000000000002,0.001,0.3062,0.1219,0.39880000000000004,0.0028000000000000004
+Epoch=3,epoch=3 (others same as baseline),16.63,3.22,23.16,0.1,0.417,30.38,12.11,40.52,0.16,0.376,0.1663,0.0322,0.2316,0.001,0.3038,0.1211,0.4052,0.0016
+Epoch=4,epoch=4 (others same as baseline),16.62,3.27,23.16,0.1,0.416,30.4,12.19,40.46,0.24,0.37,0.16620000000000001,0.0327,0.2316,0.001,0.304,0.1219,0.4046,0.0024
+lr=1e-4,lr=1e-4 (others same as baseline),16.62,3.35,24.37,0.1,0.423,28.71,10.14,40.63,0.16,0.41,0.16620000000000001,0.0335,0.2437,0.001,0.2871,0.1014,0.40630000000000005,0.0016
+lr=3e-4,lr=3e-4 (others same as baseline),16.66,3.17,22.79,0.1,0.424,29.97,11.5,39.79,0.2,0.398,0.1666,0.0317,0.2279,0.001,0.29969999999999997,0.115,0.3979,0.002
+LoRA Attn-only,LoRA=attention only (others same as baseline),16.67,3.05,22.24,0.0,0.355,29.79,11.49,39.58,0.28,0.321,0.16670000000000001,0.0305,0.2224,0.0,0.2979,0.1149,0.3958,0.0028000000000000004
+LoRA MLP-only,LoRA=MLP only (others same as baseline),16.45,3.15,23.57,0.1,0.331,28.93,10.24,40.02,0.12,0.312,0.16449999999999998,0.0315,0.2357,0.001,0.2893,0.1024,0.40020000000000006,0.0012

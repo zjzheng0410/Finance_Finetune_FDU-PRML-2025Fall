@@ -1,0 +1,68 @@
+{
+  "model": "LoRA::Qwen/Qwen2.5-7B-Instruct::/workspace/LLaMA-Factory/saves/lr3e",
+  "gen_cfg": {
+    "max_new_tokens": 256,
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "repetition_penalty": 1.0
+  },
+  "max_input_tokens": 2048,
+  "batch_size": 24,
+  "finance": {
+    "n": 976,
+    "exact_match": 0.0010245901639344263,
+    "rouge": {
+      "rouge1": 0.24920578373091032,
+      "rouge2": 0.06372077609479286,
+      "rougeL": 0.1665958405755193
+    },
+    "bleu": {
+      "bleu": 3.174836475577604
+    },
+    "chrf": {
+      "chrf": 22.789121179381574
+    },
+    "length_pred_words": {
+      "mean": 171.50204918032787,
+      "p50": 202.0,
+      "p90": 237.0
+    },
+    "length_ref_words": {
+      "mean": 168.60245901639345,
+      "p50": 123.0,
+      "p90": 345.5
+    },
+    "latency_sec_total": 413.6789915561676,
+    "latency_sec_per_sample": 0.42385142577476187,
+    "pred_file": "eval_runs/20260112_071802_three/models/lr3e/pred_finance.jsonl"
+  },
+  "general": {
+    "n": 2470,
+    "exact_match": 0.0020242914979757085,
+    "rouge": {
+      "rouge1": 0.3786676167172006,
+      "rouge2": 0.1946486094801207,
+      "rougeL": 0.2997212612267707
+    },
+    "bleu": {
+      "bleu": 11.497419176035308
+    },
+    "chrf": {
+      "chrf": 39.79021988803899
+    },
+    "length_pred_words": {
+      "mean": 64.97813765182187,
+      "p50": 48.0,
+      "p90": 133.0999999999999
+    },
+    "length_ref_words": {
+      "mean": 41.298785425101215,
+      "p50": 26.0,
+      "p90": 96.0
+    },
+    "latency_sec_total": 982.6729071140289,
+    "latency_sec_per_sample": 0.3978432822324004,
+    "pred_file": "eval_runs/20260112_071802_three/models/lr3e/pred_general.jsonl"
+  }
+}

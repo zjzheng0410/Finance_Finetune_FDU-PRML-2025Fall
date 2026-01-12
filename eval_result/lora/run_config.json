@@ -1,0 +1,24 @@
+{
+  "baseline_model": "Qwen/Qwen2.5-7B-Instruct",
+  "lora_adapters": [
+    "/workspace/LLaMA-Factory/saves/e2baseline",
+    "/workspace/LLaMA-Factory/saves/attention",
+    "/workspace/LLaMA-Factory/saves/MLP"
+  ],
+  "full_models": [],
+  "adapter_base_model": "",
+  "finance_path": "Finance_test.json",
+  "general_path": "general_test.json",
+  "gen_cfg": {
+    "max_new_tokens": 256,
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "repetition_penalty": 1.0
+  },
+  "max_input_tokens": 2048,
+  "batch_size": 24,
+  "seed": 42,
+  "dtype": "auto",
+  "attn_impl": "auto"
+}

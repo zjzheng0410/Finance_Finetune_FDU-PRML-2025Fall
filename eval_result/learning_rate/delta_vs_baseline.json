@@ -1,0 +1,44 @@
+{
+  "LoRA::Qwen/Qwen2.5-7B-Instruct::/workspace/LLaMA-Factory/saves/e2baseline": {
+    "finance": {
+      "exact_match": 0.0010245901639344263,
+      "rougeL": 0.018069330039378773,
+      "bleu": 0.7532070856600495,
+      "chrf": -6.80154994605709
+    },
+    "general": {
+      "exact_match": -0.0004048582995951418,
+      "rougeL": 0.08986988281382927,
+      "bleu": 6.8122553902870155,
+      "chrf": 4.086186406455134
+    }
+  },
+  "LoRA::Qwen/Qwen2.5-7B-Instruct::/workspace/LLaMA-Factory/saves/lr1e": {
+    "finance": {
+      "exact_match": 0.0010245901639344263,
+      "rougeL": 0.0185845956884802,
+      "bleu": 0.9385381686931278,
+      "chrf": -5.522117620598433
+    },
+    "general": {
+      "exact_match": -0.0004048582995951418,
+      "rougeL": 0.0774425571229965,
+      "bleu": 5.379761175192433,
+      "chrf": 4.263763052770152
+    }
+  },
+  "LoRA::Qwen/Qwen2.5-7B-Instruct::/workspace/LLaMA-Factory/saves/lr3e": {
+    "finance": {
+      "exact_match": 0.0010245901639344263,
+      "rougeL": 0.018978065415052564,
+      "bleu": 0.7672123803879556,
+      "chrf": -7.106647671287938
+    },
+    "general": {
+      "exact_match": 0.0,
+      "rougeL": 0.09004137147824318,
+      "bleu": 6.740734418862637,
+      "chrf": 3.426549586030177
+    }
+  }
+}
