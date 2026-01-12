@@ -1,0 +1,274 @@
+[
+  {
+    "model": "BASE::Qwen/Qwen2.5-7B-Instruct",
+    "gen_cfg": {
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0
+    },
+    "max_input_tokens": 2048,
+    "batch_size": 24,
+    "finance": {
+      "n": 976,
+      "exact_match": 0.0,
+      "rouge": {
+        "rouge1": 0.28394469621950374,
+        "rouge2": 0.05722346800353711,
+        "rougeL": 0.14761777516046673
+      },
+      "bleu": {
+        "bleu": 2.4076240951896484
+      },
+      "chrf": {
+        "chrf": 29.895768850669512
+      },
+      "length_pred_words": {
+        "mean": 196.28483606557376,
+        "p50": 204.0,
+        "p90": 224.0
+      },
+      "length_ref_words": {
+        "mean": 168.60245901639345,
+        "p50": 123.0,
+        "p90": 345.5
+      },
+      "latency_sec_total": 273.09316849708557,
+      "latency_sec_per_sample": 0.27980857427980077,
+      "pred_file": "eval_runs/20260112_094214_three/models/Qwen2.5-7B-Instruct/pred_finance.jsonl"
+    },
+    "general": {
+      "n": 2470,
+      "exact_match": 0.0020242914979757085,
+      "rouge": {
+        "rouge1": 0.2807898195496835,
+        "rouge2": 0.12437247303636871,
+        "rougeL": 0.2096798897485275
+      },
+      "bleu": {
+        "bleu": 4.756684757172671
+      },
+      "chrf": {
+        "chrf": 36.36367030200881
+      },
+      "length_pred_words": {
+        "mean": 122.60323886639677,
+        "p50": 125.0,
+        "p90": 219.0
+      },
+      "length_ref_words": {
+        "mean": 41.298785425101215,
+        "p50": 26.0,
+        "p90": 96.0
+      },
+      "latency_sec_total": 682.1176555156708,
+      "latency_sec_per_sample": 0.2761609941358991,
+      "pred_file": "eval_runs/20260112_094214_three/models/Qwen2.5-7B-Instruct/pred_general.jsonl"
+    }
+  },
+  {
+    "model": "LoRA::Qwen/Qwen2.5-7B-Instruct::/workspace/LLaMA-Factory/saves/e2baseline",
+    "gen_cfg": {
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0
+    },
+    "max_input_tokens": 2048,
+    "batch_size": 24,
+    "finance": {
+      "n": 976,
+      "exact_match": 0.0010245901639344263,
+      "rouge": {
+        "rouge1": 0.2500586048767709,
+        "rouge2": 0.06253988580592826,
+        "rougeL": 0.1656871051998455
+      },
+      "bleu": {
+        "bleu": 3.160831180849698
+      },
+      "chrf": {
+        "chrf": 23.094218904612422
+      },
+      "length_pred_words": {
+        "mean": 175.63934426229508,
+        "p50": 206.5,
+        "p90": 236.0
+      },
+      "length_ref_words": {
+        "mean": 168.60245901639345,
+        "p50": 123.0,
+        "p90": 345.5
+      },
+      "latency_sec_total": 406.85674238204956,
+      "latency_sec_per_sample": 0.41686141637505075,
+      "pred_file": "eval_runs/20260112_094214_three/models/e2baseline/pred_finance.jsonl"
+    },
+    "general": {
+      "n": 2470,
+      "exact_match": 0.0016194331983805667,
+      "rouge": {
+        "rouge1": 0.3784831889696417,
+        "rouge2": 0.19387909855755686,
+        "rougeL": 0.29954977256235676
+      },
+      "bleu": {
+        "bleu": 11.568940147459687
+      },
+      "chrf": {
+        "chrf": 40.44985670846395
+      },
+      "length_pred_words": {
+        "mean": 66.65182186234817,
+        "p50": 50.0,
+        "p90": 135.0
+      },
+      "length_ref_words": {
+        "mean": 41.298785425101215,
+        "p50": 26.0,
+        "p90": 96.0
+      },
+      "latency_sec_total": 932.2491276264191,
+      "latency_sec_per_sample": 0.37742879660988626,
+      "pred_file": "eval_runs/20260112_094214_three/models/e2baseline/pred_general.jsonl"
+    }
+  },
+  {
+    "model": "LoRA::Qwen/Qwen2.5-7B-Instruct::/workspace/LLaMA-Factory/saves/ep3",
+    "gen_cfg": {
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0
+    },
+    "max_input_tokens": 2048,
+    "batch_size": 24,
+    "finance": {
+      "n": 976,
+      "exact_match": 0.0010245901639344263,
+      "rouge": {
+        "rouge1": 0.2522276276589632,
+        "rouge2": 0.06362524581956773,
+        "rougeL": 0.1662929419662116
+      },
+      "bleu": {
+        "bleu": 3.2211393237044024
+      },
+      "chrf": {
+        "chrf": 23.159681519916912
+      },
+      "length_pred_words": {
+        "mean": 171.66598360655738,
+        "p50": 204.0,
+        "p90": 234.5
+      },
+      "length_ref_words": {
+        "mean": 168.60245901639345,
+        "p50": 123.0,
+        "p90": 345.5
+      },
+      "latency_sec_total": 406.5647530555725,
+      "latency_sec_per_sample": 0.41656224698316857,
+      "pred_file": "eval_runs/20260112_094214_three/models/ep3/pred_finance.jsonl"
+    },
+    "general": {
+      "n": 2470,
+      "exact_match": 0.0016194331983805667,
+      "rouge": {
+        "rouge1": 0.38302007652127634,
+        "rouge2": 0.19804026994331567,
+        "rougeL": 0.303830742961409
+      },
+      "bleu": {
+        "bleu": 12.108002217144497
+      },
+      "chrf": {
+        "chrf": 40.52246736212878
+      },
+      "length_pred_words": {
+        "mean": 63.684615384615384,
+        "p50": 47.0,
+        "p90": 126.0
+      },
+      "length_ref_words": {
+        "mean": 41.298785425101215,
+        "p50": 26.0,
+        "p90": 96.0
+      },
+      "latency_sec_total": 927.7806208133698,
+      "latency_sec_per_sample": 0.3756196845398258,
+      "pred_file": "eval_runs/20260112_094214_three/models/ep3/pred_general.jsonl"
+    }
+  },
+  {
+    "model": "LoRA::Qwen/Qwen2.5-7B-Instruct::/workspace/LLaMA-Factory/saves/ep4",
+    "gen_cfg": {
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0
+    },
+    "max_input_tokens": 2048,
+    "batch_size": 24,
+    "finance": {
+      "n": 976,
+      "exact_match": 0.0010245901639344263,
+      "rouge": {
+        "rouge1": 0.2515526313923766,
+        "rouge2": 0.06421317425112869,
+        "rougeL": 0.16618656334855114
+      },
+      "bleu": {
+        "bleu": 3.2659323814323695
+      },
+      "chrf": {
+        "chrf": 23.159635790179177
+      },
+      "length_pred_words": {
+        "mean": 173.46926229508196,
+        "p50": 206.0,
+        "p90": 235.0
+      },
+      "length_ref_words": {
+        "mean": 168.60245901639345,
+        "p50": 123.0,
+        "p90": 345.5
+      },
+      "latency_sec_total": 406.29247283935547,
+      "latency_sec_per_sample": 0.41628327135179866,
+      "pred_file": "eval_runs/20260112_094214_three/models/ep4/pred_finance.jsonl"
+    },
+    "general": {
+      "n": 2470,
+      "exact_match": 0.0024291497975708503,
+      "rouge": {
+        "rouge1": 0.3833932620171913,
+        "rouge2": 0.19839108306046968,
+        "rougeL": 0.30403560944563784
+      },
+      "bleu": {
+        "bleu": 12.19499727455821
+      },
+      "chrf": {
+        "chrf": 40.45543672656023
+      },
+      "length_pred_words": {
+        "mean": 63.11255060728745,
+        "p50": 47.0,
+        "p90": 125.0
+      },
+      "length_ref_words": {
+        "mean": 41.298785425101215,
+        "p50": 26.0,
+        "p90": 96.0
+      },
+      "latency_sec_total": 914.3436367511749,
+      "latency_sec_per_sample": 0.3701796100207186,
+      "pred_file": "eval_runs/20260112_094214_three/models/ep4/pred_general.jsonl"
+    }
+  }
+]
