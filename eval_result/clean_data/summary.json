@@ -1,0 +1,206 @@
+[
+  {
+    "model": "BASE::Qwen/Qwen2.5-7B-Instruct",
+    "gen_cfg": {
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0
+    },
+    "max_input_tokens": 2048,
+    "batch_size": 24,
+    "finance": {
+      "n": 976,
+      "exact_match": 0.0,
+      "rouge": {
+        "rouge1": 0.28394469621950374,
+        "rouge2": 0.05722346800353711,
+        "rougeL": 0.14761777516046673
+      },
+      "bleu": {
+        "bleu": 2.4076240951896484
+      },
+      "chrf": {
+        "chrf": 29.895768850669512
+      },
+      "length_pred_words": {
+        "mean": 196.28483606557376,
+        "p50": 204.0,
+        "p90": 224.0
+      },
+      "length_ref_words": {
+        "mean": 168.60245901639345,
+        "p50": 123.0,
+        "p90": 345.5
+      },
+      "latency_sec_total": 273.3449366092682,
+      "latency_sec_per_sample": 0.28006653341113547,
+      "pred_file": "eval_runs/20260112_142713_two_dirs/models/Qwen2.5-7B-Instruct/pred_finance.jsonl"
+    },
+    "general": {
+      "n": 2470,
+      "exact_match": 0.0020242914979757085,
+      "rouge": {
+        "rouge1": 0.2807898195496835,
+        "rouge2": 0.12437247303636871,
+        "rougeL": 0.2096798897485275
+      },
+      "bleu": {
+        "bleu": 4.756684757172671
+      },
+      "chrf": {
+        "chrf": 36.36367030200881
+      },
+      "length_pred_words": {
+        "mean": 122.60323886639677,
+        "p50": 125.0,
+        "p90": 219.0
+      },
+      "length_ref_words": {
+        "mean": 41.298785425101215,
+        "p50": 26.0,
+        "p90": 96.0
+      },
+      "latency_sec_total": 681.9208736419678,
+      "latency_sec_per_sample": 0.27608132536112057,
+      "pred_file": "eval_runs/20260112_142713_two_dirs/models/Qwen2.5-7B-Instruct/pred_general.jsonl"
+    }
+  },
+  {
+    "model": "LoRA::Qwen/Qwen2.5-7B-Instruct::/workspace/LLaMA-Factory/saves/e2baseline",
+    "gen_cfg": {
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0
+    },
+    "max_input_tokens": 2048,
+    "batch_size": 24,
+    "finance": {
+      "n": 976,
+      "exact_match": 0.0010245901639344263,
+      "rouge": {
+        "rouge1": 0.2500586048767709,
+        "rouge2": 0.06253988580592826,
+        "rougeL": 0.1656871051998455
+      },
+      "bleu": {
+        "bleu": 3.160831180849698
+      },
+      "chrf": {
+        "chrf": 23.094218904612422
+      },
+      "length_pred_words": {
+        "mean": 175.63934426229508,
+        "p50": 206.5,
+        "p90": 236.0
+      },
+      "length_ref_words": {
+        "mean": 168.60245901639345,
+        "p50": 123.0,
+        "p90": 345.5
+      },
+      "latency_sec_total": 407.47623109817505,
+      "latency_sec_per_sample": 0.41749613842026134,
+      "pred_file": "eval_runs/20260112_142713_two_dirs/models/e2baseline/pred_finance.jsonl"
+    },
+    "general": {
+      "n": 2470,
+      "exact_match": 0.0016194331983805667,
+      "rouge": {
+        "rouge1": 0.3784831889696417,
+        "rouge2": 0.19387909855755686,
+        "rougeL": 0.29954977256235676
+      },
+      "bleu": {
+        "bleu": 11.568940147459687
+      },
+      "chrf": {
+        "chrf": 40.44985670846395
+      },
+      "length_pred_words": {
+        "mean": 66.65182186234817,
+        "p50": 50.0,
+        "p90": 135.0
+      },
+      "length_ref_words": {
+        "mean": 41.298785425101215,
+        "p50": 26.0,
+        "p90": 96.0
+      },
+      "latency_sec_total": 932.3994030952454,
+      "latency_sec_per_sample": 0.3774896368806661,
+      "pred_file": "eval_runs/20260112_142713_two_dirs/models/e2baseline/pred_general.jsonl"
+    }
+  },
+  {
+    "model": "LoRA::Qwen/Qwen2.5-7B-Instruct::/workspace/LLaMA-Factory/saves/cleandata",
+    "gen_cfg": {
+      "max_new_tokens": 256,
+      "do_sample": false,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0
+    },
+    "max_input_tokens": 2048,
+    "batch_size": 24,
+    "finance": {
+      "n": 976,
+      "exact_match": 0.0010245901639344263,
+      "rouge": {
+        "rouge1": 0.24595379409783166,
+        "rouge2": 0.062486122006801995,
+        "rougeL": 0.16380063333639813
+      },
+      "bleu": {
+        "bleu": 3.1541626797813813
+      },
+      "chrf": {
+        "chrf": 22.811788661118996
+      },
+      "length_pred_words": {
+        "mean": 169.80327868852459,
+        "p50": 201.0,
+        "p90": 237.0
+      },
+      "length_ref_words": {
+        "mean": 168.60245901639345,
+        "p50": 123.0,
+        "p90": 345.5
+      },
+      "latency_sec_total": 405.37833189964294,
+      "latency_sec_per_sample": 0.4153466515365194,
+      "pred_file": "eval_runs/20260112_142713_two_dirs/models/cleandata/pred_finance.jsonl"
+    },
+    "general": {
+      "n": 2470,
+      "exact_match": 0.0024291497975708503,
+      "rouge": {
+        "rouge1": 0.37097379310928086,
+        "rouge2": 0.18860276425447023,
+        "rougeL": 0.29291259591163854
+      },
+      "bleu": {
+        "bleu": 11.014270619645846
+      },
+      "chrf": {
+        "chrf": 40.701959924836686
+      },
+      "length_pred_words": {
+        "mean": 70.54048582995951,
+        "p50": 55.0,
+        "p90": 145.0
+      },
+      "length_ref_words": {
+        "mean": 41.298785425101215,
+        "p50": 26.0,
+        "p90": 96.0
+      },
+      "latency_sec_total": 970.1238148212433,
+      "latency_sec_per_sample": 0.3927626780652807,
+      "pred_file": "eval_runs/20260112_142713_two_dirs/models/cleandata/pred_general.jsonl"
+    }
+  }
+]
